@@ -220,6 +220,8 @@ def run_codegen(
     if evalperf_type:
         identifier += f"-{evalperf_type}"
 
+    identifier = "result"
+
     target_path = os.path.join(root, dataset, identifier)
     if jsonl_fmt:
         target_path += ".jsonl"
